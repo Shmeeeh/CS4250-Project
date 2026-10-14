@@ -10,5 +10,7 @@ Wifi board connection has been established
 
 ## Next Up
 Attempt to run doom
+
 Hook up an IPS screen
+
 Convert GPIO button input to control input
