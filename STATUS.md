@@ -19,7 +19,9 @@ We ordered this LCD Screen and this arcade button kit:
 They will arrive next week
 
 # Next Up
-## Week 10/19 - 1/25
+## Week 10/19 - 10/31
 Get the LCD Screen to work
 
 Encode the arcade kit button inputs into USB mouse/keyboard/controller inputs
+
+Emulate DOOM on Raspberry Pi
