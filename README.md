@@ -1,6 +1,12 @@
 # CS4250-Project
 Our project plan is to make a mini-arcade cabinet, with a wooden frame, joystick(s), buttons, and a monitor display, capable of playing arcade or console games.
 
-This will involve the construction of the machine itself, likely with wood that is lasercut in the makerspace, buttons and joysticks from online retailers, speakers, wires, et cetera. Many people have made DIY arcade cabinets, and we can draw inspiration and parts lists from their examples.
+We will use the Arduino core on the SG200X board as a USB encoder for the arcade stick inputs, connecting to a Raspberry Pi 3 that will be running the games. 
 
-Due to the size of and visual definition necessary for the display, as well as the computational strain of emulation, we will have to switch to a Raspberry pi board for the games and HDMI output. With this switch in mind, I would like to try and use the Oz64 SG2000 board as a USB encoder board, to turn the buttons and joystick inputs into USB data for the Raspberry pi. The Oz64 has a USB 2.0 Host port, so I am hopeful that we will be able to use the Oz64 with the control peripherals like this.
+We intend to use this diagram:
+![arcade machine cutting diagram](https://content.instructables.com/FJU/7KFZ/IB49T0FG/FJU7KFZIB49T0FG.jpg?auto=webp&width=1600&height=900&fit=bounds&md=MjAxNS0wNi0xOSAxODo1MTozMS4w)
+
+Which we got from here:
+- https://www.instructables.com/Legend-of-Zelda-Bartop-Arcade-Cabinet
+
+We will modify it to our project accordingly, likely removing some extraneous details (such as the keyboard door, and the two joysticks), and altering the screen opening to fit our monitor size.
