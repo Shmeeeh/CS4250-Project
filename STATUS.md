@@ -23,5 +23,7 @@ They will arrive next week
 Get the LCD Screen to work
 
 Encode the arcade kit button inputs into USB mouse/keyboard/controller inputs
+- Will require some rewiring of the arcade button wires
+- Test in the meantime by using simple GPIO buttons from basic wire kits
 
 Emulate DOOM on Raspberry Pi
