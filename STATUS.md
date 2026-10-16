@@ -12,5 +12,14 @@ Emmett was unable to hook up the DSI screen on the Duo-S
 
 Now focusing on getting the Arduino core on the Duo-S to function as a USB Encoder for GPIO input
 
-## Next Up
-Convert GPIO button input to USB controller input
+We ordered this LCD Screen and this arcade button kit:
+- https://www.amazon.com/dp/B0G6KP328Q?ref=ppx_yo2ov_dt_b_fed_asin_title
+- https://thunderstickstudio.com/products/grs-led-single-player-arcade-diy-kit?variant=43701902934245
+
+They will arrive next week
+
+# Next Up
+## Week 10/19 - 1/25
+Get the LCD Screen to work
+
+Encode the arcade kit button inputs into USB mouse/keyboard/controller inputs
