@@ -16,7 +16,7 @@ We ordered this LCD Screen and this arcade button kit:
 - https://www.amazon.com/dp/B0G6KP328Q?ref=ppx_yo2ov_dt_b_fed_asin_title
 - https://thunderstickstudio.com/products/grs-led-single-player-arcade-diy-kit?variant=43701902934245
 
-They will arrive next week
+They will arrive next week. We are still in the early project stages, so we have no setup scripts, encoder configuration, or wiring documentation
 
 # Next Up
 ## Week 10/19 - 10/31
