@@ -10,3 +10,6 @@ Which we got from here:
 - https://www.instructables.com/Legend-of-Zelda-Bartop-Arcade-Cabinet
 
 We will modify it to our project accordingly, likely removing some extraneous details (such as the keyboard door, and the two joysticks), and altering the screen opening to fit our monitor size.
+
+This is the arcade controls we ordered "https://thunderstickstudio.com/products/grs-led-single-player-arcade-diy-kit?variant=43701902868709".
+We plan on stripping the wires, to connect directly to the SG2200x board.
