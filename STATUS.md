@@ -18,12 +18,12 @@ We ordered this LCD Screen and this arcade button kit:
 
 They will arrive next week. We are still in the early project stages, so we have no setup scripts, encoder configuration, or wiring documentation
 
-# Next Up
 ## Week 10/19 - 10/31
-Get the LCD Screen to work
+Get the LCD Screen to work with the pi
 
 Encode the arcade kit button inputs into USB mouse/keyboard/controller inputs
 - Will require some rewiring of the arcade button wires
 - Test in the meantime by using simple GPIO buttons from basic wire kits
-
-Emulate DOOM on Raspberry Pi
+- Arduino encoding did not seem to work, arduino core is too old?
+- Testing gpio-keys kernel
+- https://www.kernel.org/doc/Documentation/devicetree/bindings/input/gpio-keys.txt
