@@ -24,5 +24,7 @@ Get the LCD Screen to work with the pi
 Encode the arcade kit button inputs into USB mouse/keyboard/controller inputs
 - Will require some rewiring of the arcade button wires
 - Test in the meantime by using simple GPIO buttons from basic wire kits
+
 Encoding inputs with the Arduino did not seem to work, arduino core is maybe too old?
-Now testing gpio-keys kernel (https://www.kernel.org/doc/Documentation/devicetree/bindings/input/gpio-keys.txt)
+
+Now testing [gpio-keys kernel](https://www.kernel.org/doc/Documentation/devicetree/bindings/input/gpio-keys.txt)
