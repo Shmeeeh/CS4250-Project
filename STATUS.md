@@ -29,6 +29,10 @@ Encoding inputs with the Arduino did not seem to work, arduino core is maybe too
 
 Now testing [gpio-keys kernel](https://www.kernel.org/doc/Documentation/devicetree/bindings/input/gpio-keys.txt)
 
+gpio-keys resources:
+- [Keycodes](https://github.com/torvalds/linux/blob/master/include/uapi/linux/input-event-codes.h)
+- 
+
 ## Week 11/1 - 11/7
 Hopefully, buttons now work.
 
