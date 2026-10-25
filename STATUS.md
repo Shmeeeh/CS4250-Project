@@ -28,3 +28,18 @@ Encode the arcade kit button inputs into USB mouse/keyboard/controller inputs
 Encoding inputs with the Arduino did not seem to work, arduino core is maybe too old?
 
 Now testing [gpio-keys kernel](https://www.kernel.org/doc/Documentation/devicetree/bindings/input/gpio-keys.txt)
+
+## Week 11/1 - 11/7
+Hopefully, buttons now work.
+
+- Set it up so that the pi interprets the inputs into/from the MilkV
+
+## Week 11/8 - 11/14
+- Set up the firmware on the pi for running games
+- Create the case for the project using the diagram detailed in the README
+
+## Week 11/15 - 11/21
+- Iron out any last kinks in the wiring, firmware, or missed goals.
+
+## Week 11/22 - 11/28
+- Hopefully, project will be done!
