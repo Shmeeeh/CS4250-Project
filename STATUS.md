@@ -45,3 +45,15 @@ Hopefully, buttons now work.
 
 ## Week 11/22 - 11/28
 - Hopefully, project will be done!
+
+## Week 8 Status Update (Report 07)
+
+### Current Status
+We are currently in Week 8 and on schedule to finish by Week 16. This week we simplified our physical build plan and fleshed out the technical details for how our two boards (the Oz64 SG2000X and the Raspberry Pi 3) will work together.
+
+### What We Accomplished This Week
+* **Updated `README.md` with Project Overview and Week 8-16 Timeline:** Documented our updated project plan and added a week-by-week timeline through Week 16.
+* **Pivoted to a Cardboard / DIY Cabinet Frame:** Decided to build the arcade enclosure out of sturdy cardboard instead of laser-cutting wood in the makerspace so we can prototype and mount our controls and display faster.
+* **Confirmed Display & Compute Split:** Because the SG2000X does not have HDMI output, we confirmed we will use a Raspberry Pi 3 to run the games and output HDMI video/audio to the monitor.
+* **Created `docs/ArduinoInputDesign.md`:** Flushed out the design for using the Arduino core on the SG2000X as our USB input encoder, including the hardware connection plan for the Thunderstick arcade kit and the pull-up resistor wiring design.
+* **Added Draft Encoder Sketch:** Committed `src/sg2000_usb_encoder/sg2000_usb_encoder.ino`, a first-pass Arduino sketch that polls the arcade switches with `INPUT_PULLUP`, debounces, and reports press/release events over serial.
