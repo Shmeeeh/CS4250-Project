@@ -25,13 +25,11 @@ Encode the arcade kit button inputs into USB mouse/keyboard/controller inputs
 - Will require some rewiring of the arcade button wires
 - Test in the meantime by using simple GPIO buttons from basic wire kits
 
-Encoding inputs with the Arduino did not seem to work, arduino core is maybe too old?
+### Success!
+Using the Arduino core and an official button programming documentation, we got a successful button communication on the board! The .ino file is in the programs folder.
 
-Now testing [gpio-keys kernel](https://www.kernel.org/doc/Documentation/devicetree/bindings/input/gpio-keys.txt)
+It seems plausible we can expand this from digital output into analog output and get communication between Duo S and Pi.
 
-gpio-keys resources:
-- [Keycodes](https://github.com/torvalds/linux/blob/master/include/uapi/linux/input-event-codes.h)
-- 
 
 ## Week 11/1 - 11/7
 Hopefully, buttons now work.
