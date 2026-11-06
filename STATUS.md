@@ -57,3 +57,12 @@ We are currently in Week 8 and on schedule to finish by Week 16. This week we si
 * **Confirmed Display & Compute Split:** Because the SG2000X does not have HDMI output, we confirmed we will use a Raspberry Pi 3 to run the games and output HDMI video/audio to the monitor.
 * **Created `docs/ArduinoInputDesign.md`:** Flushed out the design for using the Arduino core on the SG2000X as our USB input encoder, including the hardware connection plan for the Thunderstick arcade kit and the pull-up resistor wiring design.
 * **Added Draft Encoder Sketch:** Committed `src/sg2000_usb_encoder/sg2000_usb_encoder.ino`, a first-pass Arduino sketch that polls the arcade switches with `INPUT_PULLUP`, debounces, and reports press/release events over serial.
+
+## Week 9 Status Update (Report 08)
+
+### Current Status
+We are currently in Week 9 and still on schedule to finish by Week 16. This week we proved out the input path for the arcade controls by getting a single button working on the Arduino core.
+
+### What We Accomplished This Week
+* **Got a Single Button Working on the Arduino Core:** Using the Arduino core on the Duo-S, we wired up and successfully read a single arcade button over GPIO on pins 6, 11, and 12. The button uses `INPUT_PULLUP` with debounce logic, and pressing it drives both the button's LED and the onboard blue LED.
+* **Added `src/single_button_test.ino`:** Committed the working single-button test sketch so the wiring and logic are documented and reproducible.
