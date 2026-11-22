@@ -66,3 +66,11 @@ We are currently in Week 9 and still on schedule to finish by Week 16. This week
 ### What We Accomplished This Week
 * **Got a Single Button Working on the Arduino Core:** Using the Arduino core on the Duo-S, we wired up and successfully read a single arcade button over GPIO on pins 6, 11, and 12. The button uses `INPUT_PULLUP` with debounce logic, and pressing it drives both the button's LED and the onboard blue LED.
 * **Added `src/single_button_test.ino`:** Committed the working single-button test sketch so the wiring and logic are documented and reproducible.
+
+## Week 10 Status Update (Report 09)
+
+### Current Status
+We are currently in Week 10 and still on schedule to finish by Week 16. This week we continued to work on the buttons and got the Raspberry Pi, Video output, and Audio output functioning. We will continue to work on it during Fall break of week 11.
+
+### What We Accomplished This Week
+* **Flashed Emulation OS Onto the Raspberry Pi:** Flashed a micro-SD card with "RetroPie" allowing us to run any number of retro games on it. Currently tested with N64 games, functioning without issue.
