@@ -35,7 +35,7 @@ We are currently in **Week 11** and have 5 weeks remaining until our final submi
 | **Week 9** | Set up the Arduino core environment for the SG2000X and test reading a single arcade button and LED using a basic GPIO test sketch. A demo video of a button press powering the LED on the board and the button via the Arduino core is attached in the [`videos/`](videos/) folder. | ✅ Completed |
 | **Week 10 (Backlogged)** | Wire all Thunderstick joystick directions and arcade buttons to the SG2000X GPIO header and write the full polling + debouncing Arduino code. | 🔄 In Progress |
 | **Week 11 (Current)** | Set up the Raspberry Pi 3 with the game emulator OS and verify HDMI video and speaker audio output on our monitor. | ✅ Completed |
-| **Week 12** | Connect the SG2000X to the Raspberry Pi 3 over USB and write/configure the input script so button presses on the SG2000X control the Raspberry Pi. | 📅 Planned |
+| **Week 12** | Connect the SG2000X to the Raspberry Pi 3 over UART and configure the input so button presses on the SG2000X are recognized by the Raspberry Pi. | 📅 Planned |
 | **Week 13** | Measure the monitor, speakers, and control layout, then cut and assemble the cardboard DIY arcade cabinet frame. | 📅 Planned |
 | **Week 14** | Mount the joystick, buttons, SG2000X, Raspberry Pi 3, and monitor inside the cardboard cabinet and organize internal wiring. | 📅 Planned |
 | **Week 15** | Full system testing: playtest arcade games, fix any button lag or loose wires, and reinforce the cardboard frame where needed. | 📅 Planned |
