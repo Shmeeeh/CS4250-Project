@@ -40,3 +40,12 @@ We are currently in **Week 9** and have 7 weeks remaining until our final submis
 | **Week 14** | Mount the joystick, buttons, SG2000X, Raspberry Pi 3, and monitor inside the cardboard cabinet and organize internal wiring. | 📅 Planned |
 | **Week 15** | Full system testing: playtest arcade games, fix any button lag or loose wires, and reinforce the cardboard frame where needed. | 📅 Planned |
 | **Week 16 (Final Due Date)** | Final code cleanup, update all repository documentation, record demo/prepare final presentation, and submit project. | 📅 Planned |
+
+
+### 3. How We Are Using the Arduino Core and Hardware UART for Input Handling
+Instead of fighting with Linux device trees (`gpio-keys`) on the MilkV Duo S adding extra inter-core Linux software to share the USB-C port—we are using the **Arduino core (`remoteproc0`)** on the SG2000X to read all of the arcade controls and send them directly over Hardware UART:
+1. **Wiring to GPIO:** Each directional switch on the joystick (Up, Down, Left, Right) and each arcade button is wired to a GPIO pin on the SG2000X Header J3 and a shared Ground (`GND`) pin.
+2. **Polling with Pull-Up Resistors:** In our Arduino sketch, we configure each input pin as `INPUT_PULLUP`. When a button is not pressed, the pin reads `HIGH`. When a player presses a button or moves the joystick, the switch closes to ground and the pin reads `LOW`.
+3. **Debouncing:** Physical arcade switches can "bounce" when pressed, registering multiple accidental clicks in a few milliseconds. Our Arduino loop checks that a pin state stays stable for 5–10 ms before registering a real press or release.
+4. **Sending Data Over Hardware UART:** Because both the SG2000X Header J3 and the Raspberry Pi 3 use 3.3V logic, the Arduino core packages the state of all buttons and directions into a compact 3-byte serial packet (`[0xAA, HighByte, LowByte]`) and transmits it directly from `UART1_TX` (Pin 18) to the Raspberry Pi 3's `RXD` (Pin 10) over two jumper wires (TX and GND). A Python `uinput` bridge script on the Raspberry Pi 3 reads the serial stream and maps the inputs to virtual gamepad controls for the emulator.S
+
