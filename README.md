@@ -27,7 +27,7 @@ Instead of fighting with Linux device trees (`gpio-keys`) on the MilkV Duo S add
 ---
 
 ## Project Timeline (Week 9 to Week 16)
-We are currently in **Week 11** and have 7 weeks remaining until our final submission in **Week 16**.
+We are currently in **Week 11** and have 5 weeks remaining until our final submission in **Week 16**.
 
 | Week | Milestone & Tasks | Status |
 | :--- | :--- | :--- |
